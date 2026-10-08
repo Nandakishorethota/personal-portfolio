@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@theme {
+  --color-text: #ffffff;
+  --color-background: #060705;
+  --color-primary: #d9bf99;
+  --color-secondary: #2d5b79;
+  --color-accent: #8a64c5;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/source-code-pro-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  @apply bg-background text-text;
+  font-family: "Source Code Pro", monospace;
+}
